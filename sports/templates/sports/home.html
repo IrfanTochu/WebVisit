@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Irfan Tochu's Page</title>
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Grid container for the main content */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Styling for the header */
+        header {
+            grid-column: 1 / -1;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Sidebar styling */
+        aside {
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Main content section styling */
+        main {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Visit details section */
+        .visit-details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eef;
+            border-radius: 8px;
+        }
+
+        /* Styling for the footer */
+        footer {
+            grid-column: 1 / -1;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Design: Single column for smaller screens */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to My Personal Webpage!</h1>
+        <p>Hello! I'm Irfan Tochu, a passionate web developer and sports enthusiast.</p>
+    </header>
+
+    <!-- Main grid layout with sidebar and content -->
+    <div class="grid-container">
+        <!-- Sidebar with hobbies and interests -->
+        <aside>
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Coding and working on web development projects</li>
+                <li>Playing football and basketball</li>
+                <li>Following the latest trends in tech and sports</li>
+            </ul>
+        </aside>
+
+        <!-- Main content section -->
+        <main>
+            <h2>About Me</h2>
+            <p>I’m a software developer with a focus on Django and Python development. In my free time, I enjoy coding, playing sports, and learning new technologies.</p>
+
+            <!-- Visit details section -->
+            <div class="visit-details">
+                <h2>Your Visit Details</h2>
+                <p>You have visited this page {{ visit_count }} times.</p>
+                <p>Your IP address: {{ visitor_ip }}</p>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>Thank you for visiting my page!</p>
+        <p>Feel free to reach out via email at <a href="mailto:your.email@example.com" style="color: #4CAF50;">your.email@example.com</a>.</p>
+    </footer>
+</body>
+</html>
